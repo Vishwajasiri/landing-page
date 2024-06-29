@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Great - Home Tutors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <h1><img src="logo.png" alt="Learn Great Logo"> <span>LearnGreat</span></h1>
+        </div>
+        <nav class="navbar">
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#tutors">Tutors</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find the Best Home Tutors Near You</h1>
+            <p>Connecting students and parents with top-rated tutors in your area.</p>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Learn Great is dedicated to connecting students with qualified home tutors. Our mission is to enhance the learning experience by providing personalized tutoring solutions tailored to each student's needs.</p>
+        <img src="about.jpeg" alt="About Us Image">
+    </section>
+    
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Personalized Tutoring</h3>
+            <p>We offer personalized tutoring sessions to meet individual needs. Our tutors create customized lesson plans based on the student's strengths and weaknesses.</p>
+        </div>
+        <div class="service-item">
+            <h3>Online Support</h3>
+            <p>Access to online resources and support for students and parents. We provide a variety of digital tools and materials to assist with learning outside of tutoring sessions.</p>
+        </div>
+        <div class="service-item">
+            <h3>Test Preparation</h3>
+            <p>Comprehensive test preparation services for standardized tests such as SAT, ACT, and more. Our tutors help students master test-taking strategies and review key content areas. We provide practice tests, time management tips, and in-depth analysis of past tests to help students improve their scores. Our focus is on building confidence and reducing test anxiety through effective preparation techniques.</p>
+        </div>
+    </section>
+    <section id="tutors" class="tutors">
+        <h2>Meet Our Tutors</h2>
+        <div class="tutor-profile">
+            <img src="tutor1.jpg" alt="Tutor 1">
+            <h3>John Doe</h3>
+            <p>John is an experienced math tutor with over 10 years of teaching experience. He holds a Master's degree in Mathematics and is passionate about helping students achieve their full potential.</p>
+        </div>
+        <div class="tutor-profile">
+            <img src="tutor2.jpg" alt="Tutor 2">
+            <h3>Jane Ayesha</h3>
+            <p>Jane specializes in English and Literature tutoring. With a background in creative writing and a Bachelor's degree in English, she helps students improve their reading and writing skills.</p>
+        </div>
+        <div class="tutor-profile">
+            <img src="tutor1.jpg" alt="Tutor 3">
+            <h3>Michael Smith</h3>
+            <p>Michael is a science tutor with a focus on physics and chemistry. He has a PhD in Physics and enjoys making complex concepts understandable for students.</p>
+        </div>
+        <div class="tutor-profile">
+            <img src="tutor2.jpg" alt="Tutor 4">
+            <h3>Emily Clark</h3>
+            <p>Emily is a history tutor with a passion for ancient civilizations. She holds a Master's degree in History and has been teaching for 8 years.</p>
+        </div>
+
+        
+        <div class="tutor-profile extra">
+            <img src="tutor1.jpg" alt="Tutor 5">
+            <h3>Alex Brown</h3>
+            <p>Alex is a Spanish language tutor with a Bachelor's degree in Spanish Language and Literature. He has 6 years of experience teaching Spanish to students of all levels.</p>
+        </div>
+        <div class="tutor-profile extra">
+            <img src="tutor2.jpg" alt="Tutor 6">
+            <h3>Sara White</h3>
+            <p>Sara is an experienced art tutor who helps students explore their creativity. She holds a Master's degree in Fine Arts and has been teaching art for over a decade.</p>
+        </div>
+        <div class="tutor-profile extra">
+            <img src="tutor1.jpg" alt="Tutor 7">
+            <h3>David Green</h3>
+            <p>David is a computer science tutor with expertise in programming and software development. He holds a Master's degree in Computer Science and has 5 years of teaching experience.</p>
+        </div>
+        <div class="tutor-profile extra">
+            <img src="tutor2.jpg" alt="Tutor 8">
+            <h3>Lisa Black</h3>
+            <p>Lisa is a music tutor specializing in piano and violin. She has a Bachelor's degree in Music Education and has been teaching music for 7 years.</p>
+        </div>
+        <div class="tutor-profile extra">
+            <img src="tutor1.jpg" alt="Tutor 9">
+            <h3>Chris Red</h3>
+            <p>Chris is a physical education tutor with a focus on fitness and health. He holds a degree in Physical Education and has been helping students stay active and healthy for 10 years.</p>
+        </div>
+        
+        
+        <button id="moreTutorsBtn" onclick="toggleMoreTutors()">More Tutors</button>
+    </section>
+    
+  
+
+    <footer class="footer">
+        <p>&copy; 2024 Learn Great. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMoreTutors() {
+            var moreTutors = document.querySelectorAll('.tutor-profile.extra');
+            var moreTutorsBtn = document.getElementById('moreTutorsBtn');
+        
+            moreTutors.forEach(function(profile) {
+                profile.style.display = profile.style.display === 'none' || profile.style.display === '' ? 'inline-block' : 'none';
+            });
+        
+            moreTutorsBtn.textContent = moreTutorsBtn.textContent === 'More Tutors' ? 'Less Tutors' : 'More Tutors';
+        }
+    </script>
+    
+</body>
+</html>
